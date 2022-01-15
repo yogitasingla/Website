@@ -1616,7 +1616,7 @@ section {
   position: relative;
   float: right;
   width: 100%;
-  padding: 40px 20px 0 100px;
+  padding: 0px 20px 0 100px;
   text-align: left;
 }
 .timeline > li .timeline-panel:before {
@@ -1632,13 +1632,20 @@ section {
   border-left-width: 0;
 }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 
-.rounded-circle-img-fluid{
+.rounded-circle {
+  border-radius: 50% !important;
+}
+/* .rounded-circle-img-fluid{
   border-radius: 50% !important;
     max-width: 160px !important;
     height: 156px !important;
     margin-top: 0px;
-}
+} */
 
 .timeline > li .timeline-image {
   position: absolute;
@@ -1688,6 +1695,13 @@ section {
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
   margin-bottom: 0;
+}
+header.masthead .masthead-subheading {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 @media (min-width: 768px) {
@@ -1742,13 +1756,14 @@ section {
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 20px 20px;
   }
+ 
 }
 @media (min-width: 1200px) {
   .timeline > li {
     min-height: 170px;
   }
   .timeline > li .timeline-panel {
-    padding: 30px 20px 20px 100px;
+    padding: 27px 20px 20px 100px;
   }
   .timeline > li .timeline-image {
     width: 170px;
